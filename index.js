@@ -3,7 +3,8 @@ const chefsData = require("./data/chefs.json");
 const recipesData = require("./data/recipes.json");
 
 const app = express();
-
+const cors = require("cors");
+app.use(cors());
 
 app.get("/api/chefs", (req, res) => {
   res.send(chefsData);
