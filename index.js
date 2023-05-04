@@ -6,6 +6,7 @@ const app = express();
 const cors = require("cors");
 app.use(cors());
 
+// Routes
 app.get("/api/chefs", (req, res) => {
   res.send(chefsData);
 });
